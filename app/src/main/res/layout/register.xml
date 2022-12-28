@@ -9,8 +9,8 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:padding="10dp"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:padding="10dp">
 
         <TextView
             android:id="@+id/textView17"
@@ -33,15 +33,16 @@
                 android:layout_width="110dp"
                 android:layout_height="match_parent"
                 android:orientation="vertical">
+
                 <TextView
                     android:id="@+id/textView21"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="37dp"
                     android:text="E-mail:      "
                     android:textSize="20sp"
                     tools:layout_editor_absoluteX="57dp"
-                    tools:layout_editor_absoluteY="264dp"
-                    android:layout_marginTop="37dp"/>
+                    tools:layout_editor_absoluteY="264dp" />
 
                 <TextView
                     android:layout_width="110dp"
@@ -51,15 +52,14 @@
             </LinearLayout>
 
 
-
             <EditText
                 android:id="@+id/register_email"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="@drawable/shape_message"
                 android:ems="10"
                 android:hint="(ex. abcde@gamil.com)"
                 android:inputType="textEmailAddress"
-                android:background="@drawable/shape_message"
                 android:minHeight="48dp"
                 android:textSize="16sp"
                 tools:layout_editor_absoluteX="123dp"
@@ -87,17 +87,15 @@
                 android:id="@+id/re_pwd"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="@drawable/shape_message"
                 android:ems="10"
                 android:hint="password"
                 android:inputType="textPassword"
                 android:minHeight="48dp"
                 android:textSize="16sp"
                 tools:layout_editor_absoluteX="125dp"
-                tools:layout_editor_absoluteY="427dp"
-                android:background="@drawable/shape_message"/>
+                tools:layout_editor_absoluteY="427dp" />
         </LinearLayout>
-
-
 
 
         <Button

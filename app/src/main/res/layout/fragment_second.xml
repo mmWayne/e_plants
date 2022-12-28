@@ -28,15 +28,16 @@
             <!--                android:layout_height="350dp"-->
             <!--                android:layout_marginLeft="10dp" />-->
             <FrameLayout
-                android:id="@+id/container"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent" >
 
-                <androidx.camera.view.PreviewView
-                    android:id="@+id/previewView"
-                    android:layout_width="350dp"
-                    android:layout_height="350dp"
-                    android:layout_marginLeft="10dp" />
+                <org.opencv.android.JavaCameraView
+                    android:id="@+id/surface_view"
+                    android:layout_width="373dp"
+                    android:layout_height="200dp"
+                    app:camera_id="any"
+                    app:show_fps="true" />
+
             </FrameLayout>
 
         </LinearLayout>
@@ -53,7 +54,6 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="30dp"
-                android:onClick="recordButtonPressed"
                 android:text="開始" />
 
             <Button

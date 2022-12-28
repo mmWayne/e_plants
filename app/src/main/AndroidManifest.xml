@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    package="com.example.e_plants">
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.CAMERA"/>
+
+    <uses-feature android:name="android.hardware.camera" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.front" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.front.autofocus" android:required="false"/>
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -26,8 +32,8 @@
 
         <activity
             android:name="com.example.e_plants.register_A"
-            android:label="註冊"
-            android:exported="true">
+            android:exported="true"
+            android:label="註冊">
             <intent-filter>
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
@@ -35,8 +41,8 @@
 
         <activity
             android:name="com.example.e_plants.frag_first_A"
-            android:label="植物資料查詢"
-            android:exported="true">
+            android:exported="true"
+            android:label="植物資料查詢">
             <intent-filter>
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
@@ -45,8 +51,8 @@
 
         <activity
             android:name="com.example.e_plants.frag_forth_A"
-            android:label="植物資料"
-            android:exported="true">
+            android:exported="true"
+            android:label="植物資料">
             <intent-filter>
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
@@ -54,8 +60,8 @@
 
         <activity
             android:name="com.example.e_plants.new_plant_A"
-            android:label="新增植物"
-            android:exported="true">
+            android:exported="true"
+            android:label="新增植物">
             <intent-filter>
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
@@ -63,8 +69,8 @@
 
         <activity
             android:name="com.example.e_plants.frag_sixth_A"
-            android:label="設定"
-            android:exported="true">
+            android:exported="true"
+            android:label="設定">
             <intent-filter>
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
@@ -72,8 +78,8 @@
 
         <activity
             android:name="com.example.e_plants.frag_sixth2_A"
-            android:label="更改密碼"
-            android:exported="true">
+            android:exported="true"
+            android:label="更改密碼">
             <intent-filter>
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
@@ -81,8 +87,8 @@
 
         <activity
             android:name="com.example.e_plants.frag_second_A"
-            android:label="植物狀態"
-            android:exported="true">
+            android:exported="true"
+            android:label="植物狀態">
             <intent-filter>
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
@@ -90,8 +96,8 @@
 
         <activity
             android:name="com.example.e_plants.list"
-            android:label="已新增植物"
-            android:exported="true">
+            android:exported="true"
+            android:label="已新增植物">
             <intent-filter>
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
@@ -99,8 +105,8 @@
 
         <activity
             android:name="com.example.e_plants.diary"
-            android:label="植物日記"
-            android:exported="true">
+            android:exported="true"
+            android:label="植物日記">
             <intent-filter>
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
