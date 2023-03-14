@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="plant_n">
+        <item>百里香</item>
+        <item>薄荷</item>
+        <item>秋海棠</item>
+        <item>非洲菫</item>
+
+        <item>琴葉榕</item>
+        <item>龜背芋</item>
+        <item>空氣鳳梨</item>
+        <item>迷迭香</item>
+
+        <item>鹿角蕨</item>
+        <item>鐵線蕨</item>
+        <item>山蘇花</item>
+        <item>狼尾蕨</item>
+
+        <item>秋麗</item>
+        <item>千兔耳</item>
+        <item>白烏帽子</item>
+        <item>仙人掌</item>
+
+        <item>藍莓</item>
+        <item>草莓</item>
+        <item>石榴</item>
+
+        <item>火鶴花</item>
+        <item>吊蘭</item>
+
+        <item>黃金葛</item>
+        <item>常春藤</item>
+        <item>虎尾蘭</item>
+
+        <item>無花果</item>
+        <item>石蓮花</item>
+        <item>緬梔花</item>
+        <item>羅勒</item>
+        <item>蝴蝶蘭</item>
+        <item>銀杏</item>
+    </string-array>
+</resources>

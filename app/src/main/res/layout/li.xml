@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/植物照護紀錄頁面"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="欲查詢植物資料，請選擇下表植物: "
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:id="@+id/sp3"
+                    android:layout_width="160dp"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="10dp"
+                    android:autofillHints="選擇"
+                    android:background="#E1E0D4"
+                    android:entries="@array/plant_n" />
+
+                <Button
+                    android:id="@+id/search1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="#607868"
+                    android:text="查詢資料" />
+
+            </LinearLayout>
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/addNewPlant1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="15dp"
+                android:clickable="true"
+                android:contentDescription="add"
+                app:backgroundTint="#C3C1C1"
+                app:srcCompat="@drawable/ic_add"
+                android:backgroundTint="#A8AFA8"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycleView1"
+                    android:layout_width="312dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:scrollbarSize="3dp"
+                    android:scrollbarStyle="outsideOverlay"
+                    android:scrollbars="vertical">
+
+                </androidx.recyclerview.widget.RecyclerView>
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

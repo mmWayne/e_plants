@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:scrollbarAlwaysDrawVerticalTrack="false"
+    android:scrollbarDefaultDelayBeforeFade="3"
+    android:scrollbarStyle="outsideInset"
+    app:layout_dodgeInsetEdges="none"
+    android:background="#F4F3EB"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!--            <SurfaceView-->
+            <!--                android:id="@+id/surfaceView"-->
+            <!--                android:layout_width="350dp"-->
+            <!--                android:layout_height="350dp"-->
+            <!--                android:layout_marginLeft="10dp" />-->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <org.opencv.android.JavaCameraView
+                    android:id="@+id/surface_view"
+                    android:layout_width="360dp"
+                    android:layout_height="200dp"
+                    app:camera_id="any"
+                    app:show_fps="true" />
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="50dp"
+            >
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="108dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="22sp"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/temperature"
+                android:text="溫度"
+                android:textSize="20sp"
+                />
+
+            <TextView
+                android:id="@+id/textView25"
+                android:layout_width="143dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="80dp"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/water"
+                android:text=" 土壤濕度"
+                android:textSize="20sp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@drawable/shape_message"
+            android:layout_marginTop="10dp"
+            >
+
+            <TextView
+                android:id="@+id/textTemper"
+                android:layout_width="33dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="25dp"
+                android:layout_weight="1"
+                android:textSize="35sp" />
+
+            <TextView
+                android:id="@+id/textHumid"
+                android:layout_width="33dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="25dp"
+                android:layout_weight="1"
+                android:textSize="35sp" />
+
+
+        </LinearLayout>
+
+
+
+
+        <!--<LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40sp"
+            >
+
+            <TextView
+                android:id="@+id/textView35"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30sp"
+                android:text="手動澆水"
+                android:textSize="20sp"
+                />
+
+            <Switch
+                android:id="@+id/switch1"
+                android:layout_width="wrap_content"
+                android:layout_height="48sp"
+                android:layout_marginLeft="50sp"
+                android:text="關閉 / 開啟"
+                android:textSize="20sp"
+                tools:ignore="TouchTargetSizeCheck" />
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp">
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30sp"
+                android:text="風扇"
+                android:textSize="20sp" />
+
+            <Switch
+                android:id="@+id/switch2"
+                android:layout_width="wrap_content"
+                android:layout_height="48sp"
+                android:layout_marginLeft="90sp"
+                android:text="關閉 / 開啟"
+                android:textSize="20sp"
+                tools:ignore="TouchTargetSizeCheck" />
+
+        </LinearLayout>
+
+-->
+    </LinearLayout>
+
+</ScrollView>
+

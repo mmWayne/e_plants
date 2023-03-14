@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--<TextView
+        android:id="@+id/textView52"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_book"
+        android:text="  植物日記: "
+        android:layout_marginStart="110dp"
+        android:layout_marginTop="50dp"
+        android:textSize="20sp"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.111"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" /><![CDATA[ />
+
+    ]]>-->
+
+    <!--tools:layout_editor_absoluteX="256dp"
+        tools:layout_editor_absoluteY="16dp"-->
+
+    <!--app:layout_constraintStart_toEndOf="@+id/textView52"
+    app:layout_constraintTop_toTopOf="@+id/textView52"-->
+
+    <!--<com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/addDiary"
+        android:layout_width="50dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#A8AFA8"
+        android:clickable="true"
+        android:contentDescription="add"
+        app:backgroundTint="#C3C1C1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.743"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/diary"
+        app:layout_constraintVertical_bias="0.0">
+    </com.google.android.material.floatingactionbutton.FloatingActionButton>-->
+
+    <TextView
+        android:id="@+id/diary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="555dp"
+        android:hint="快幫植物寫日記吧!"
+        android:minHeight="30dp"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.768"
+        app:layout_constraintStart_toStartOf="parent"
+
+        tools:ignore="MissingConstraints" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/addDiary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp"
+        android:backgroundTint="#A8AFA8"
+        android:clickable="true"
+        android:contentDescription="add"
+        app:backgroundTint="#C3C1C1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.842"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/diary"
+        app:layout_constraintVertical_bias="0.001"
+        app:srcCompat="@drawable/ic_add"></com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycleView2"
+        android:layout_width="300dp"
+        android:layout_height="500dp"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical"
+        android:scrollbarSize="3dp"
+        android:scrollbarStyle="outsideOverlay"
+        android:scrollbars="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/addDiary"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="64dp">
+
+    </androidx.recyclerview.widget.RecyclerView>
+</androidx.constraintlayout.widget.ConstraintLayout>

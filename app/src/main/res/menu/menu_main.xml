@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <item
+        android:id="@+id/it_first"
+        android:title="首頁"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/it_second"
+        android:title="植物狀態"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/it_first2"
+        android:title="植物日記"
+        app:showAsAction="never" />
+
+
+    <item
+        android:id="@+id/it_add"
+        android:title="新增植物"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/setting"
+        android:title="設定"
+        app:showAsAction="never"/>
+
+
+    <item
+        android:id="@+id/logout"
+        android:title="登出"
+        app:showAsAction="never" />
+
+
+
+
+
+
+
+
+</menu>
